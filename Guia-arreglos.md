@@ -1,4 +1,4 @@
-# 4.1 ¿Cómo se declara un arreglo en Java?
+# 1 ¿Cómo se declara un arreglo en Java?
 
 ## Manera 1: Inicialización directa con valores
 
