@@ -77,7 +77,7 @@ System.out.println("Suma: " + suma);
 
 ------------------------------------------------------------------------
 
-# 4.3 ¿Cómo se recorren los arreglos en Java?
+# 3 ¿Cómo se recorren los arreglos en Java?
 
 ## 1) Usando un For tradicional
 
@@ -106,7 +106,7 @@ Arrays.stream(num)
 
 ------------------------------------------------------------------------
 
-# 4.4 Diferencias entre arreglos y ArrayList en Java
+# 4 Diferencias entre arreglos y ArrayList en Java
 
 ## Tamaño fijo (Array)
 
@@ -115,7 +115,7 @@ int[] numbers = new int[2];
 numbers[0] = 1;
 numbers[1] = 4;
 
-System.out.println(numbers[1]);
+System.out.println("\nEjemplo tamaño fijo: "+numbers[1]);
 ```
 
 ## Tamaño dinámico (ArrayList)
@@ -126,8 +126,8 @@ lista.add(10);
 lista.add(20);
 lista.add(30);
 
-System.out.println(lista.get(2));
-System.out.println(lista.size());
+System.out.println("Elemento en índice 1: " + lista.get(2));
+System.out.println("Size de ArrayList: " + lista.size());
 ```
 
 ## Métodos disponibles
@@ -137,8 +137,14 @@ System.out.println(lista.size());
 ``` java
 int[] numbers = new int[4];
 
-System.out.println(numbers.length);
-System.out.println(numbers[2]);
+numbers[0] = 9;
+numbers[1] = 4;
+numbers[2] = 6;
+numbers[3] = 4;
+		 
+//No tiene metodos mas que el tamaño, y acceder por el indice.
+System.out.println("\nEjemplo tamaño fijo: "+numbers.length);
+System.out.println(""+numbers[2]);
 ```
 
 ### ArrayList
@@ -149,8 +155,8 @@ list.add(10);
 list.add(20);
 list.add(30);
 
-System.out.println(list.get(2));
-System.out.println(list.size());
+System.out.println("Elementos: " + list.get(2));
+System.out.println("Tamaño: " + list.size());
 System.out.println(list.add(10));
 ```
 
@@ -170,11 +176,10 @@ ArrayList<Integer> lista = new ArrayList<>();
 
 ## Rendimiento
 
--   ARRAY: Más rápido y eficiente en memoria.
--   ARRAYLIST: Más flexible pero consume más memoria.
+-   ARRAY: Mas rapido - Mas eficiente en memoria - Es bueno para datos fijos
+-   ARRAYLIST: Es un poco mas lento - Consume mas memoria - Es mas comodo
 
 ## ¿Cuándo usar cada uno?
 
 -   ARRAY: Cuando el tamaño no cambia y se necesita máximo rendimiento.
--   ARRAYLIST: Cuando el tamaño puede variar y se quiere mayor
-    flexibilidad.
+-   ARRAYLIST: Cuando el tamaño puede variar y se quiere codigo mas flexible.
