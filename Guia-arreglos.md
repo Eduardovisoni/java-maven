@@ -79,7 +79,7 @@ System.out.println("Suma: " + suma);
 
 # 4.3 ¿Cómo se recorren los arreglos en Java?
 
-## 1) For tradicional
+## 1) Usando un For tradicional
 
 ``` java
 int[] num = {5, 10, 15, 20, 25, 30};
@@ -89,7 +89,7 @@ for(int i = 0; i < num.length; i++) {
 }
 ```
 
-## 2) For-each
+## 2) Usando For-each
 
 ``` java
 for (int n : num) {
@@ -97,7 +97,7 @@ for (int n : num) {
 }
 ```
 
-## 3) Streams
+## 3) Usando Streams
 
 ``` java
 Arrays.stream(num)
