@@ -25,7 +25,7 @@ System.out.println("Manera numero 2: " + numbers[5]);
 
 ------------------------------------------------------------------------
 
-# 4.2 Métodos y utilidades principales para arreglos
+# 2 Métodos y utilidades principales para arreglos
 
 ``` java
 import java.util.Arrays;
