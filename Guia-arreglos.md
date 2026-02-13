@@ -32,6 +32,7 @@ import java.util.Arrays;
 ```
 
 ## 1) Arrays.toString()
+Imprime directamente el arreglo, sin usar un FOR.
 
 ``` java
 int[] a = {10,20,30,40,50};
@@ -40,6 +41,7 @@ System.out.println(Arrays.toString(a));
 ```
 
 ## 2) Arrays.sort()
+Imprime el arreglo completo, de menor a mayor.
 
 ``` java
 int[] b = {5,2,4,3,1};
@@ -49,6 +51,7 @@ System.out.println(Arrays.toString(b));
 ```
 
 ## 3) Arrays.equals()
+Se comparar 2 arreglos.
 
 ``` java
 int[] c = {1,2,3,4,5};
@@ -57,6 +60,7 @@ System.out.println(Arrays.equals(b, c));
 ```
 
 ## 4) Arrays.binarySearch()
+Se busca la posicion de un numero dentro de un arreglo en orden
 
 ``` java
 int position = Arrays.binarySearch(c, 4);
@@ -64,6 +68,7 @@ System.out.println("Posicion: " + position);
 ```
 
 ## 5) Arrays.stream()
+Procesa arreglos de manera funcional sin tantos enredos
 
 ``` java
 int suma = Arrays.stream(a).sum();
